@@ -33,14 +33,14 @@ function Page(){
   <div className="row row-cols-1 row-cols-md-2">
     <div className="col inpt">
     <Form.Label>First Name *</Form.Label>
-          <Form.Control type="text" id="fname" required />
+          <Form.Control type="text" id="fname" label="fname" required />
           <Form.Control.Feedback type="invalid">
           This field is required.
           </Form.Control.Feedback>
     </div>
     <div className="col inpt">
     <Form.Label>Last Name *</Form.Label>
-          <Form.Control type="text" id="lname" required />
+          <Form.Control type="text" id="lname" label="lname" required />
           <Form.Control.Feedback type="invalid">
           This field is required.
           </Form.Control.Feedback>
@@ -50,7 +50,7 @@ function Page(){
     
     <div className="col inpt">
     <Form.Label>Email Address *</Form.Label>
-          <Form.Control type="email" id="email"required />
+          <Form.Control type="email" id="email" label="email" required />
           <Form.Control.Feedback type="invalid">
           Please enter a valid email address.
           </Form.Control.Feedback>
@@ -76,7 +76,7 @@ function Page(){
     
     <div className="col inpt">
     <Form.Label>Message *</Form.Label>
-    <Form.Control as="textarea" rows={3} id="text" required/>
+    <Form.Control as="textarea" rows={3} id="text" label="textarea" required/>
           <Form.Control.Feedback type="invalid">
             This field is required.
           </Form.Control.Feedback>
