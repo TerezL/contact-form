@@ -32,15 +32,15 @@ function Page(){
             <div className="container ">
   <div className="row row-cols-1 row-cols-md-2">
     <div className="col inpt">
-    <Form.Label>First Name *</Form.Label>
-          <Form.Control type="text" id="fname" label="fname" required />
+    <label htmlFor="fname">First name *</label>
+          <input type="text" id="fname" required />
           <Form.Control.Feedback type="invalid">
           This field is required.
           </Form.Control.Feedback>
     </div>
     <div className="col inpt">
-    <Form.Label>Last Name *</Form.Label>
-          <Form.Control type="text" id="lname" label="lname" required />
+    <label htmlFor="lname">Last Name *</label>
+          <input type="text" id="lname" required />
           <Form.Control.Feedback type="invalid">
           This field is required.
           </Form.Control.Feedback>
@@ -49,15 +49,15 @@ function Page(){
     <div className="row">
     
     <div className="col inpt">
-    <Form.Label>Email Address *</Form.Label>
-          <Form.Control type="email" id="email" label="email" required />
+    <label htmlFor="email">Email Address *</label>
+          <input type="email" id="email" required />
           <Form.Control.Feedback type="invalid">
           Please enter a valid email address.
           </Form.Control.Feedback>
     </div>
     </div>
     <div className="row"> 
-    <Form.Label>Query Type *</Form.Label>
+    <label htmlFor="optionRadio">Query Type *</label>
     <div className="col quest">
     <div className="form-check form-check-inline">
           <input className="form-check-input" type="radio" name="optionRadio" id="optionRadio" value="1" required />
@@ -75,8 +75,8 @@ function Page(){
     <div className="row">
     
     <div className="col inpt">
-    <Form.Label>Message *</Form.Label>
-    <Form.Control as="textarea" rows={3} id="text" label="textarea" required/>
+    <label htmlFor="text">Message *</label>
+    <textarea rows="3" cols="33" id="text" required/>
           <Form.Control.Feedback type="invalid">
             This field is required.
           </Form.Control.Feedback>
